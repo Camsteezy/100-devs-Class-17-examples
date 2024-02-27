@@ -117,4 +117,27 @@ function secondLowAndHigh(arr){
   let sorted = arr.sort((a,b=> a - b)) 
   alert(sorted[1] + sorted [sorted.length - 2]) 
 }
+//StopWatch Object : Literal Notation
 
+let stopwatch ={}
+
+stopwatch.currentTime=12
+
+stopwatch.tellTime = function(time){
+    console.log(`The current time is ${this.currentTime}.`)
+}
+
+stopwatch.tellTime(stopwatch.currentTime)
+
+stopwatch.color = 'black'
+stopwatch.type='digital'
+stopwatch.brand= 'Toshiba'
+stopwatch.startTime = function(){
+    console.log('starting at 000')
+}
+stopwatch.stop = function(){
+    console.log('stop')
+}
+stopwatch.sayBrand = function(){
+    console.log(`${this.brand}`)
+}
